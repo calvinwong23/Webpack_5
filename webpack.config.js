@@ -1,11 +1,11 @@
-let node = "development"
+let mode = "development";
 
-if (process.env.NODE_env === "production"){
+if (process.env.NODE_ENV === "production"){
     mode = "production";
 }
 
 module.exports = {
-    mode: node,
+    mode: mode,
 
     module: {
         rules: [
