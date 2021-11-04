@@ -13,7 +13,7 @@ module.exports = {
         rules: [
             {
                 test:/\.css$/i,
-                use: [ MiniCssExtractPlugin.loader, "css-loader"],
+                use: [MiniCssExtractPlugin.loader, "css-loader"],
             },
             {
                 test: /\.js$/,
@@ -30,5 +30,6 @@ module.exports = {
     devtool: "source-map",
     devServer: {
         static: "./dist",
-    }
-}
+        hot: true,
+    },
+};
